@@ -17,8 +17,17 @@ body {
 }
 
 p {
-  margin: 1rem;
   color: $primary;
+  margin: 0;
+}
+
+h2 {
+  padding-left: 1em;
+}
+
+h3 {
+  margin-top: 0.4em;
+  margin-bottom: 0.3em;
 }
 
 .titre_principal {
@@ -41,16 +50,19 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .fa-map-marker-alt {
-    padding-right: 0;
-    padding-right: 0;
+  padding-right: 1em;
 }
 
 .reservation {
   padding-top: 1em;
   padding-bottom: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
   text-align: center;
   background-color: $color_btn;
   display: flex;
@@ -59,16 +71,15 @@ p {
 }
 
 .btn_explor {
-    border-radius: 2em;
-    background-color: blueviolet;
-    width: 70%;
-    color: #ffffff;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin-top: 1em;
-    margin-bottom: 1em;
+  border-radius: 2em;
+  background-color: blueviolet;
+  width: 70%;
+  color: #ffffff;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
-
 
 .btn {
   background-color: #ffffff;
@@ -95,20 +106,69 @@ p {
     box-shadow: 0.2em 0.2em 0.5em rgb(176, 174, 174);
   }
   &__number-ol {
-      border-radius: 40px;
-      background-color: #9356dc;
-      color: #ffffff;
-      border-top: 0.5em solid #9356dc;
-      border-bottom: 0.5em solid #9356dc;
-      border-right: 0.8em solid #9356dc;
-      border-left: 0.8em solid #9356dc;
-      margin-left: -15px;
+    border-radius: 40px;
+    background-color: #9356dc;
+    color: #ffffff;
+    border-top: 0.5em solid #9356dc;
+    border-bottom: 0.5em solid #9356dc;
+    border-right: 0.8em solid #9356dc;
+    border-left: 0.8em solid #9356dc;
+    margin-left: -15px;
   }
 }
 
-.fa-mobile-alt, .fa-list-ul, .fa-store {
-    color: rgb(121, 118, 118);
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+.fa-mobile-alt,
+.fa-list-ul,
+.fa-store {
+  color: rgb(143, 140, 140);
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
+.section_resto {
+  background-color: $color_btn;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vignette {
+  width: 90%;
+  height: 250px;
+  box-shadow: 0.2em 0.2em 0.5em rgb(176, 174, 174);
+  margin-bottom: 2em;
+  background-color: #ffffff;
+  border-radius: 1em;
+}
+
+.picture_vignette {
+  border-radius: 14px 14px 0 0;
+  height: 175px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  object-fit: cover;
+}
+
+.vignette__info_resto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nom_resto {
+  padding-left: 0.7em;
+  margin: 0;
+}
+
+.coeur_resto {
+  padding-right: 0.7em;
+  font-size: 2em;
+}
