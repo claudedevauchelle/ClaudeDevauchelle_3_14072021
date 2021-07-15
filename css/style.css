@@ -55,15 +55,15 @@ h3 {
 }
 
 .reservation {
+  font-size: 1.2em;
   padding-top: 1em;
   padding-bottom: 2em;
-  padding-left: 1em;
-  padding-right: 1em;
   text-align: center;
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .btn_explor {
@@ -167,6 +167,32 @@ h3 {
 .coeur_resto {
   padding-right: 0.7em;
   font-size: 2em;
+}
+
+footer {
+  background-color: #353535;
+  color: #ffffff;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 1em;
+  line-height: 1.6em;
+}
+
+.titre_footer {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.3em;
+  padding-left: 1em;
+  padding-top: 1em;
+}
+
+.fa-utensils {
+  padding-right: 1em;
+}
+
+.fa-hands-helping {
+  padding-right: 0.6em;
 }
 
 /*# sourceMappingURL=style.css.map */
