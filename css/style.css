@@ -1,17 +1,83 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import "variables.scss";
- *   |         ^^^^^^^^^^^^^^^^
- *   '
- *   sass/style.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"variables.scss\";\a   \2502          ^^^^^^^^^^^^^^^^\a   \2575 \a   sass/style.scss 1:9  root stylesheet";
+body {
+  background: #ffffff;
+  font-family: sans-serif;
+  color: #181818;
+  margin: auto;
+  width: 100%;
 }
+body .bloc_page {
+  width: 100%;
+  margin: 0 auto 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  margin: 1rem;
+  color: #353535;
+}
+
+.titre_principal {
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.titre_principal .logo img {
+  width: 50%;
+}
+.titre_principal .logo {
+  display: flex;
+  justify-content: space-around;
+}
+
+.position {
+  background-color: #eaeaea;
+  box-shadow: inset 0.5em 1em 0.5em -0.75em #a7a7a7;
+  display: flex;
+  justify-content: space-around;
+}
+
+.reservation {
+  padding-top: 1em;
+  padding-bottom: 2em;
+  text-align: center;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn_explor {
+  border-radius: 2em;
+  background-color: blueviolet;
+  width: 70%;
+  color: #ffffff;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.btn {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 5px #c2c1c1;
+  margin-left: 1em;
+}
+.btn__step {
+  border-radius: 1em;
+  background-color: #f6f6f6;
+  padding-top: 1.3em;
+  padding-bottom: 1.3em;
+  text-align: center;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  box-shadow: 0.2em 0.2em 0.5em #b0aeae;
+}
+
+/*# sourceMappingURL=style.css.map */
