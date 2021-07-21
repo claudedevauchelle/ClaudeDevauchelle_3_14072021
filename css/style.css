@@ -1,3 +1,42 @@
+.titre_principal {
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.titre_principal .logo img {
+  width: 50%;
+}
+.titre_principal .logo {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  background-color: #353535;
+  color: #ffffff;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 1em;
+  line-height: 1.6em;
+}
+
+.titre_footer {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.3em;
+  padding-left: 1em;
+  padding-top: 1em;
+}
+
+.fa-utensils {
+  padding-right: 1em;
+}
+
+.fa-hands-helping {
+  padding-right: 0.6em;
+}
+
 body {
   background: #ffffff;
   font-family: sans-serif;
@@ -24,19 +63,6 @@ h2 {
 h3 {
   margin-top: 0.4em;
   margin-bottom: 0.3em;
-}
-
-.titre_principal {
-  width: 100%;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-.titre_principal .logo img {
-  width: 50%;
-}
-.titre_principal .logo {
-  display: flex;
-  justify-content: space-around;
 }
 
 .position {
@@ -167,32 +193,6 @@ h3 {
 .coeur_resto {
   padding-right: 0.7em;
   font-size: 2em;
-}
-
-footer {
-  background-color: #353535;
-  color: #ffffff;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 1em;
-  line-height: 1.6em;
-}
-
-.titre_footer {
-  font-family: "Shrikhand", cursive;
-  font-size: 1.3em;
-  padding-left: 1em;
-  padding-top: 1em;
-}
-
-.fa-utensils {
-  padding-right: 1em;
-}
-
-.fa-hands-helping {
-  padding-right: 0.6em;
 }
 
 /*# sourceMappingURL=style.css.map */
