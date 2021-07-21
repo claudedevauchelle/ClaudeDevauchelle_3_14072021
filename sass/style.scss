@@ -166,4 +166,13 @@ h3 {
   font-size: 2em;
 }
 
+.link_resto {
+  text-decoration: none;
+  color: #181818;
+}
 
+.titre_menus {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
