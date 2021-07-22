@@ -134,6 +134,10 @@ p {
   margin: 0;
 }
 
+h1 {
+  font-size: 1.5em;
+}
+
 h2 {
   padding-left: 1em;
 }
@@ -172,7 +176,7 @@ h3 {
 
 .btn_explor {
   border-radius: 2em;
-  background-color: blueviolet;
+  background: linear-gradient(175deg, #f184dc, #9e59dc);
   width: 70%;
   color: #ffffff;
   padding-top: 1em;
