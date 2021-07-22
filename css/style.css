@@ -210,6 +210,13 @@ h3 {
   width: 90%;
   box-shadow: 0.2em 0.2em 0.5em #b0aeae;
 }
+.btn__bloc:hover {
+  opacity: 1;
+  background-color: #f5edff;
+}
+.btn__bloc:hover .fas {
+  color: #9356dc;
+}
 .btn__number-ol {
   border-radius: 40px;
   background-color: #9356dc;
