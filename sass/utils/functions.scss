@@ -1,79 +1,119 @@
 .loader {
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    margin-right: 15px;
-    position: relative;
-  }
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 15px;
+  position: relative;
+}
 
-  .loader_spinner {
-    position: absolute;
-    background-color: rgba(235, 222, 240, 0.9);
+.loader_spinner {
+  position: absolute;
+  background-color: rgba(235, 222, 240, 0.9);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9e59dc;
+  font-size: 2em;
+  animation-name: fadeInOut;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 100%;
     height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #9e59dc;
-    font-size: 2em;
-    animation-name: fadeInOut;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
   }
-
-  @keyframes fadeInOut {
-    0% {
-      opacity: 100%;
-      height: 100%;
-    }
-    75% {
-      opacity: 99%;
-      height: 100%;
-    }
-    100% {
-      opacity: 0%;
-      height: 0%;
-    }
+  75% {
+    opacity: 99%;
+    height: 100%;
   }
+  100% {
+    opacity: 0%;
+    height: 0%;
+  }
+}
 
-  .load-spin {
+.load-spin {
+  border-radius: 50px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    bottom: -6px;
+    right: -6px;
+    border: 10px solid transparent;
     border-radius: 50px;
-    &::after {
-      content: "";
-      position: absolute;
-      top: -6px;
-      left: -6px;
-      bottom: -6px;
-      right: -6px;
-      border: 10px solid transparent;
-      border-radius: 50px;
-      border-top-color: #9e59dc;
-      border-right-color: #9e59dc;
-      border-left-color: #9e59dc;
-      border-bottom-color: transparent;
-      animation: spin 1s linear 0s infinite;
-    }
+    border-top-color: #9e59dc;
+    border-right-color: #9e59dc;
+    border-left-color: #9e59dc;
+    border-bottom-color: transparent;
+    animation: spin 1s linear 0s infinite;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  17% {
+    transform: rotate(22deg);
+  }
+  24% {
+    transform: rotate(86deg);
+  }
+  46% {
+    transform: rotate(175deg);
+  }
+  85% {
+    transform: rotate(286deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.logo_coeur {
+    padding-right: 2em;
+}
+
+.coeur_resto {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0.7em;
+  font-size: 2em;
+
+  .icons-group {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+  .icon-default {
+    transition: opacity 0.3s, transform 0.3s;
   }
 
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
+  .icon-hover {
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 0;
+  }
+
+  &:hover {
+    .icon-hover {
+      opacity: 1;
+      color: #9356dc;
+      transition: opacity 2s;
     }
-    17% {
-      transform: rotate(22deg);
-    }
-    24% {
-      transform: rotate(86deg);
-    }
-    46% {
-      transform: rotate(175deg);
-    }
-    85% {
-      transform: rotate(286deg);
-    }
-    100% {
-      transform: rotate(360deg);
+    .icon-default {
+      opacity: 0;
+      transition: opacity 2s;
     }
   }
+}

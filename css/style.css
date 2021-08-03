@@ -76,6 +76,41 @@
     transform: rotate(360deg);
   }
 }
+.logo_coeur {
+  padding-right: 2em;
+}
+
+.coeur_resto {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0.7em;
+  font-size: 2em;
+}
+.coeur_resto .icons-group {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.coeur_resto .icon-default {
+  transition: opacity 0.3s, transform 0.3s;
+}
+.coeur_resto .icon-hover {
+  transition: opacity 0.3s, transform 0.3s;
+  opacity: 0;
+}
+.coeur_resto:hover .icon-hover {
+  opacity: 1;
+  color: #9356dc;
+  transition: opacity 2s;
+}
+.coeur_resto:hover .icon-default {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
 .titre_principal {
   width: 100%;
   margin-top: 1em;
@@ -358,11 +393,6 @@ h4 {
 .nom_resto {
   padding-left: 0.7em;
   margin: 0;
-}
-
-.coeur_resto {
-  padding-right: 0.7em;
-  font-size: 2em;
 }
 
 .link_resto {
