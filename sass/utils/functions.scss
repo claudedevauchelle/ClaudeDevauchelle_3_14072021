@@ -11,6 +11,7 @@
 }
 
 .loader_spinner {
+  z-index: 100;
   position: absolute;
   background-color: rgba(235, 222, 240, 0.9);
   height: 100%;

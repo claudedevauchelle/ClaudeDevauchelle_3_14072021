@@ -8,6 +8,7 @@
 }
 
 .loader_spinner {
+  z-index: 100;
   position: absolute;
   background-color: rgba(235, 222, 240, 0.9);
   height: 100%;
@@ -519,7 +520,6 @@ h4 {
 }
 
 .restaurants {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -545,7 +545,6 @@ h4 {
 }
 
 .vignette__info_resto {
-  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
