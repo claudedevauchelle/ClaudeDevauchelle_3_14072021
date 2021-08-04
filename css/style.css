@@ -395,6 +395,11 @@ ul {
   position: absolute;
 }
 
+.home_link {
+  text-decoration: none;
+  color: black;
+}
+
 body {
   font-family: sans-serif;
   color: #181818;
