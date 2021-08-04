@@ -19,8 +19,18 @@
   padding-bottom: 2em;
 }
 
+.nom_description_plat {
+  padding-left: 10px;
+  flex: 1;
+  &, & > * {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
 .dexription_plat {
-  font-size: 0.8em;
+  font-size: 0.85em;
   font-weight: 100;
 }
 
@@ -33,6 +43,7 @@
 }
 
 .vignette_choix_1, .vignette_choix_2, .vignette_choix_3, .vignette_choix_4 {
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0.5em;
@@ -44,7 +55,37 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  box-shadow: 0.2em 0.2em 0.5em rgb(176, 174, 174);
+  box-shadow: 0.2em 0.2em 0.5em rgba(0,0,0,0.2);
+  transition: box-shadow 0.5s;
+  &:hover {
+    box-shadow: 0.2em 0.2em 0.5em rgba(0,0,0,0.4);
+    .fa-check-circle {
+      transform: rotate(360deg);
+      animation-name: rotate_coche;
+      animation: rotate_coche 0.5s;
+      color: #fff;
+    }
+    .coche {
+      width: 50px;
+      height: 100%;
+      opacity: 1;
+    }
+
+    .prix {
+      padding-right: 50px;
+    }
+  }
+}
+
+@keyframes rotate_coche {
+  0% {
+    transform: rotate(0deg);
+    color: rgba(255, 255, 0, 0);
+  }
+  100% {
+    transform: rotate(360deg);
+    color: #fff;
+  }
 }
 
 .titre_choix {
@@ -67,6 +108,8 @@
   display: flex;
   justify-content: end;
   align-items: flex-end;
+  padding-right: 20px;
+  transition:  padding-right 0.5s;
 }
 
 .fa-heart {
@@ -74,3 +117,26 @@
   font-size: 1em;
   font-weight: 100;
 }
+
+.coche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  background-color: #99e2d0;
+  top: 0px;
+  right: 0px;
+  width: 0;
+  height: 100%;
+  border-radius: 0 5px 5px 0;
+  transition: width 0.5s;
+  opacity: 1;
+}
+
+.fa-check-circle {
+  color: rgba(255, 255, 0, 0);
+  font-size: 1.5em;
+  position: absolute;
+ }
+

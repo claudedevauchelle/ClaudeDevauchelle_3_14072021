@@ -137,12 +137,14 @@ h4 {
 }
 
 .restaurants {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .vignette {
+  position: relative;
   width: 90%;
   height: 250px;
   box-shadow: 0.2em 0.2em 0.5em rgb(176, 174, 174);
@@ -161,6 +163,7 @@ h4 {
 }
 
 .vignette__info_resto {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -182,4 +185,14 @@ h4 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.vignette__new_item {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #008766;
+  background-color: #99e2d0;
+  padding: 5px;
+  border-radius: 3px;
 }

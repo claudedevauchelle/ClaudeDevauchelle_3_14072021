@@ -268,8 +268,18 @@ ul {
   padding-bottom: 2em;
 }
 
+.nom_description_plat {
+  padding-left: 10px;
+  flex: 1;
+}
+.nom_description_plat, .nom_description_plat > * {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .dexription_plat {
-  font-size: 0.8em;
+  font-size: 0.85em;
   font-weight: 100;
 }
 
@@ -282,6 +292,7 @@ ul {
 }
 
 .vignette_choix_1, .vignette_choix_2, .vignette_choix_3, .vignette_choix_4 {
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0.5em;
@@ -293,9 +304,37 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  box-shadow: 0.2em 0.2em 0.5em #b0aeae;
+  box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.5s;
+}
+.vignette_choix_1:hover, .vignette_choix_2:hover, .vignette_choix_3:hover, .vignette_choix_4:hover {
+  box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.4);
+}
+.vignette_choix_1:hover .fa-check-circle, .vignette_choix_2:hover .fa-check-circle, .vignette_choix_3:hover .fa-check-circle, .vignette_choix_4:hover .fa-check-circle {
+  transform: rotate(360deg);
+  animation-name: rotate_coche;
+  animation: rotate_coche 0.5s;
+  color: #fff;
+}
+.vignette_choix_1:hover .coche, .vignette_choix_2:hover .coche, .vignette_choix_3:hover .coche, .vignette_choix_4:hover .coche {
+  width: 50px;
+  height: 100%;
+  opacity: 1;
+}
+.vignette_choix_1:hover .prix, .vignette_choix_2:hover .prix, .vignette_choix_3:hover .prix, .vignette_choix_4:hover .prix {
+  padding-right: 50px;
 }
 
+@keyframes rotate_coche {
+  0% {
+    transform: rotate(0deg);
+    color: rgba(255, 255, 0, 0);
+  }
+  100% {
+    transform: rotate(360deg);
+    color: #fff;
+  }
+}
 .titre_choix {
   padding-top: 1em;
   padding-left: 1em;
@@ -316,12 +355,36 @@ ul {
   display: flex;
   justify-content: end;
   align-items: flex-end;
+  padding-right: 20px;
+  transition: padding-right 0.5s;
 }
 
 .fa-heart {
   padding-right: 0.7em;
   font-size: 1em;
   font-weight: 100;
+}
+
+.coche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  background-color: #99e2d0;
+  top: 0px;
+  right: 0px;
+  width: 0;
+  height: 100%;
+  border-radius: 0 5px 5px 0;
+  transition: width 0.5s;
+  opacity: 1;
+}
+
+.fa-check-circle {
+  color: rgba(255, 255, 0, 0);
+  font-size: 1.5em;
+  position: absolute;
 }
 
 body {
@@ -456,12 +519,14 @@ h4 {
 }
 
 .restaurants {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .vignette {
+  position: relative;
   width: 90%;
   height: 250px;
   box-shadow: 0.2em 0.2em 0.5em #b0aeae;
@@ -480,6 +545,7 @@ h4 {
 }
 
 .vignette__info_resto {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -500,6 +566,16 @@ h4 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.vignette__new_item {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #008766;
+  background-color: #99e2d0;
+  padding: 5px;
+  border-radius: 3px;
 }
 
 /*# sourceMappingURL=style.css.map */
