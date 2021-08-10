@@ -533,7 +533,6 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  box-shadow: 5px #c0bcbc;
   margin-left: 1em;
 }
 .btn__bloc {
