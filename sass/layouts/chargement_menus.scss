@@ -1,0 +1,96 @@
+.vignette_choix_1 {
+  animation-name: fadeOutIn;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOutIn {
+  0% {
+    opacity: 0%;
+    transform: translateY(0px);
+  }
+  75% {
+    opacity: 99%;
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(-15px);
+  }
+}
+
+.vignette_choix_2 {
+  animation-name: fadeOutIn;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOutIn {
+  0% {
+    opacity: 0%;
+    transform: translateY(0px);
+  }
+  50% {
+    opacity: 0%;
+  }
+  75% {
+    opacity: 70%;
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(-15px);
+  }
+}
+
+.vignette_choix_3 {
+  animation-name: fadeOutIn;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOutIn {
+  0% {
+    opacity: 0%;
+    transform: translateY(0px);
+  }
+  50% {
+    opacity: 0%;
+  }
+  75% {
+    opacity: 40%;
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(-15px);
+  }
+}
+
+.vignette_choix_4 {
+  animation-name: fadeOutIn;
+  animation-duration: 1.4s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOutIn {
+  0% {
+    opacity: 0%;
+    transform: translateY(0px);
+  }
+  50% {
+    opacity: 0%;
+  }
+  75% {
+    opacity: 20%;
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(-15px);
+  }
+}
