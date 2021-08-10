@@ -106,7 +106,9 @@
 }
 .coeur_resto:hover .icon-hover {
   opacity: 1;
-  color: #9356dc;
+  background-image: linear-gradient(200deg, #a35cdc, #ea83df);
+  -webkit-background-clip: text;
+  color: transparent;
   transition: opacity 2s;
 }
 .coeur_resto:hover .icon-default {
@@ -479,6 +481,10 @@ h4 {
   padding-bottom: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
+}
+.btn_explor:hover {
+  filter: brightness(1.2);
+  box-shadow: 0.2em 0.2em 0.5em #b0aeae;
 }
 
 .btn {

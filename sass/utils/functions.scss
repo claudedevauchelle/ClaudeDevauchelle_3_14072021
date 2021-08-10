@@ -115,7 +115,9 @@
   &:hover {
     .icon-hover {
       opacity: 1;
-      color: #9356dc;
+      background-image: linear-gradient(200deg, #a35cdc, #ea83df);
+      -webkit-background-clip: text;
+      color: transparent;
       transition: opacity 2s;
     }
     .icon-default {
