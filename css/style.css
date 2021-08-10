@@ -498,6 +498,7 @@ h4 {
   border-radius: 2em;
   background: linear-gradient(175deg, #f184dc, #9e59dc);
   width: 70%;
+  max-width: 768px;
   color: #ffffff;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -532,6 +533,7 @@ h4 {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+  max-width: 768px;
   box-shadow: 0.2em 0.2em 0.5em #b0aeae;
 }
 .btn__bloc:hover {
@@ -576,6 +578,7 @@ h4 {
 .vignette {
   position: relative;
   width: 90%;
+  max-width: 768px;
   height: 250px;
   box-shadow: 0.2em 0.2em 0.5em #b0aeae;
   margin-bottom: 2em;
