@@ -12,7 +12,7 @@
 
 .loader_spinner {
   z-index: 100;
-  position: absolute;
+  position: fixed;
   background-color: rgba(235, 222, 240, 0.9);
   height: 100%;
   width: 100%;
@@ -134,17 +134,7 @@
   animation-iteration-count: 1;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
-  // animation: cat 1000ms ;
 }
-
-// @keyframes cat{
-//   0% {
-//       transform: translateY(0px);
-//   }
-//   100% {
-//       transform: translateY(-10px);
-//       }
-//   }
 
 @keyframes fadeOutIn {
   0% {
@@ -166,17 +156,8 @@
   animation-iteration-count: 1;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
-  // animation: cat 1000ms ;
 }
 
-// @keyframes cat{
-//   0% {
-//       transform: translateY(0px);
-//   }
-//   100% {
-//       transform: translateY(-10px);
-//       }
-//   }
 
 @keyframes fadeOutIn {
   0% {
@@ -201,17 +182,8 @@
   animation-iteration-count: 1;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
-  // animation: cat 1000ms ;
 }
 
-// @keyframes cat{
-//   0% {
-//       transform: translateY(0px);
-//   }
-//   100% {
-//       transform: translateY(-10px);
-//       }
-//   }
 
 @keyframes fadeOutIn {
   0% {
@@ -236,17 +208,8 @@
   animation-iteration-count: 1;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
-  // animation: cat 1000ms ;
 }
 
-// @keyframes cat{
-//   0% {
-//       transform: translateY(0px);
-//   }
-//   100% {
-//       transform: translateY(-10px);
-//       }
-//   }
 
 @keyframes fadeOutIn {
   0% {

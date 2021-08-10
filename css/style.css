@@ -9,7 +9,7 @@
 
 .loader_spinner {
   z-index: 100;
-  position: absolute;
+  position: fixed;
   background-color: rgba(235, 222, 240, 0.9);
   height: 100%;
   width: 100%;
@@ -210,8 +210,6 @@
 }
 .titre_principal {
   width: 100%;
-  margin-top: 1em;
-  margin-bottom: 1em;
 }
 .titre_principal .logo img {
   width: 50%;
@@ -282,6 +280,11 @@ ul {
 .dexription_plat {
   font-size: 0.85em;
   font-weight: 100;
+}
+
+.trio_choix_menus {
+  max-width: 768px;
+  margin: auto;
 }
 
 .titre_menus {
@@ -365,6 +368,7 @@ ul {
   align-items: flex-end;
   padding-right: 20px;
   transition: padding-right 0.5s;
+  padding-left: 38px;
 }
 
 .fa-heart {
@@ -398,6 +402,7 @@ ul {
 .home_link {
   text-decoration: none;
   color: black;
+  padding-right: 20px;
 }
 
 body {
@@ -419,7 +424,10 @@ p {
 }
 
 h1 {
-  font-size: 1.5em;
+  font-family: "Shrikhand", cursive;
+  font-size: 3em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 h2 {

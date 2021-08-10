@@ -34,6 +34,12 @@
   font-weight: 100;
 }
 
+.trio_choix_menus {
+  max-width: 768px;
+  margin: auto;
+}
+
+
 .titre_menus {
   font-family: 'Shrikhand', cursive;
   padding-left: 1em;
@@ -117,6 +123,7 @@
   align-items: flex-end;
   padding-right: 20px;
   transition:  padding-right 0.5s;
+  padding-left: 38px;
 }
 
 .fa-heart {
@@ -150,4 +157,5 @@
  .home_link {
    text-decoration: none;
    color: black;
+   padding-right: 20px;
  }
