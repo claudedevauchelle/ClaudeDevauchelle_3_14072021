@@ -1,6 +1,4 @@
-
 /* -- LOAD SPINNER PAGE ACCUEIL  -- */
-
 
 .loader {
   width: 50px;
@@ -86,7 +84,10 @@
 /* -- LOGO COEUR CHANGEMENT COULEUR  -- */
 
 .logo_coeur {
-    padding-right: 2em;
+  padding-right: 2em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .coeur_resto {
@@ -127,7 +128,6 @@
   }
 }
 
-
 /* -- MENUS APPARAIT FADE OUT FADE IN PAGES RESTOS  -- */
 
 .vignette_choix_1 {
@@ -160,7 +160,6 @@
   animation-fill-mode: forwards;
 }
 
-
 @keyframes fadeOutIn {
   0% {
     opacity: 0%;
@@ -186,7 +185,6 @@
   animation-fill-mode: forwards;
 }
 
-
 @keyframes fadeOutIn {
   0% {
     opacity: 0%;
@@ -211,7 +209,6 @@
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
-
 
 @keyframes fadeOutIn {
   0% {
