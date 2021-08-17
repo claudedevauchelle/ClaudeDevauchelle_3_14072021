@@ -52,54 +52,6 @@ h6 {
   font-size: 0.6em;
 }
 
-.vignette_choix_1,
-.vignette_choix_2,
-.vignette_choix_3,
-.vignette_choix_4 {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0.5em;
-  margin-top: 0.5em;
-  padding: 0.5em;
-  width: 90%;
-  border-radius: 0.5em;
-  background-color: #ffff;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.5s;
-  &:hover {
-    box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.4);
-    .fa-check-circle {
-      transform: rotate(360deg);
-      animation-name: rotate_coche;
-      animation: rotate_coche 0.5s;
-      color: #fff;
-    }
-    .coche {
-      width: 50px;
-      height: 100%;
-      opacity: 1;
-    }
-
-    .prix {
-      padding-right: 50px;
-    }
-  }
-}
-
-@keyframes rotate_coche {
-  0% {
-    transform: rotate(0deg);
-    color: rgba(255, 255, 0, 0);
-  }
-  100% {
-    transform: rotate(360deg);
-    color: #fff;
-  }
-}
 
 .titre_choix {
   padding-top: 1em;

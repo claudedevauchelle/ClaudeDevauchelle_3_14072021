@@ -1,97 +1,3 @@
-/* -- MENUS APPARAIT FADE OUT FADE IN PAGES RESTOS  -- */
-.vignette_choix_1 {
-  animation-name: fadeOutIn;
-  animation-duration: 0.8s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeOutIn {
-  0% {
-    opacity: 0%;
-    transform: translateY(0px);
-  }
-  75% {
-    opacity: 99%;
-  }
-  100% {
-    opacity: 100%;
-    transform: translateY(-15px);
-  }
-}
-.vignette_choix_2 {
-  animation-name: fadeOutIn;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeOutIn {
-  0% {
-    opacity: 0%;
-    transform: translateY(0px);
-  }
-  50% {
-    opacity: 0%;
-  }
-  75% {
-    opacity: 70%;
-  }
-  100% {
-    opacity: 100%;
-    transform: translateY(-15px);
-  }
-}
-.vignette_choix_3 {
-  animation-name: fadeOutIn;
-  animation-duration: 1.2s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeOutIn {
-  0% {
-    opacity: 0%;
-    transform: translateY(0px);
-  }
-  50% {
-    opacity: 0%;
-  }
-  75% {
-    opacity: 40%;
-  }
-  100% {
-    opacity: 100%;
-    transform: translateY(-15px);
-  }
-}
-.vignette_choix_4 {
-  animation-name: fadeOutIn;
-  animation-duration: 1.4s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeOutIn {
-  0% {
-    opacity: 0%;
-    transform: translateY(0px);
-  }
-  50% {
-    opacity: 0%;
-  }
-  75% {
-    opacity: 20%;
-  }
-  100% {
-    opacity: 100%;
-    transform: translateY(-15px);
-  }
-}
 .titre_principal {
   width: 100%;
 }
@@ -191,65 +97,6 @@ h6 > * {
   font-size: 0.6em;
 }
 
-.vignette_choix_1,
-.vignette_choix_2,
-.vignette_choix_3,
-.vignette_choix_4 {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0.5em;
-  margin-top: 0.5em;
-  padding: 0.5em;
-  width: 90%;
-  border-radius: 0.5em;
-  background-color: #ffff;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.5s;
-}
-.vignette_choix_1:hover,
-.vignette_choix_2:hover,
-.vignette_choix_3:hover,
-.vignette_choix_4:hover {
-  box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.4);
-}
-.vignette_choix_1:hover .fa-check-circle,
-.vignette_choix_2:hover .fa-check-circle,
-.vignette_choix_3:hover .fa-check-circle,
-.vignette_choix_4:hover .fa-check-circle {
-  transform: rotate(360deg);
-  animation-name: rotate_coche;
-  animation: rotate_coche 0.5s;
-  color: #fff;
-}
-.vignette_choix_1:hover .coche,
-.vignette_choix_2:hover .coche,
-.vignette_choix_3:hover .coche,
-.vignette_choix_4:hover .coche {
-  width: 50px;
-  height: 100%;
-  opacity: 1;
-}
-.vignette_choix_1:hover .prix,
-.vignette_choix_2:hover .prix,
-.vignette_choix_3:hover .prix,
-.vignette_choix_4:hover .prix {
-  padding-right: 50px;
-}
-
-@keyframes rotate_coche {
-  0% {
-    transform: rotate(0deg);
-    color: rgba(255, 255, 0, 0);
-  }
-  100% {
-    transform: rotate(360deg);
-    color: #fff;
-  }
-}
 .titre_choix {
   padding-top: 1em;
   padding-left: 1em;
@@ -526,6 +373,65 @@ h6 > * {
   100% {
     opacity: 100%;
     transform: translateY(-15px);
+  }
+}
+.vignette_choix_1,
+.vignette_choix_2,
+.vignette_choix_3,
+.vignette_choix_4 {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  padding: 0.5em;
+  width: 90%;
+  border-radius: 0.5em;
+  background-color: #ffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.5s;
+}
+.vignette_choix_1:hover,
+.vignette_choix_2:hover,
+.vignette_choix_3:hover,
+.vignette_choix_4:hover {
+  box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.4);
+}
+.vignette_choix_1:hover .fa-check-circle,
+.vignette_choix_2:hover .fa-check-circle,
+.vignette_choix_3:hover .fa-check-circle,
+.vignette_choix_4:hover .fa-check-circle {
+  transform: rotate(360deg);
+  animation-name: rotate_coche;
+  animation: rotate_coche 0.5s;
+  color: #fff;
+}
+.vignette_choix_1:hover .coche,
+.vignette_choix_2:hover .coche,
+.vignette_choix_3:hover .coche,
+.vignette_choix_4:hover .coche {
+  width: 50px;
+  height: 100%;
+  opacity: 1;
+}
+.vignette_choix_1:hover .prix,
+.vignette_choix_2:hover .prix,
+.vignette_choix_3:hover .prix,
+.vignette_choix_4:hover .prix {
+  padding-right: 50px;
+}
+
+@keyframes rotate_coche {
+  0% {
+    transform: rotate(0deg);
+    color: rgba(255, 255, 0, 0);
+  }
+  100% {
+    transform: rotate(360deg);
+    color: #fff;
   }
 }
 body {
